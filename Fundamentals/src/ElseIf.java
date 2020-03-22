@@ -1,6 +1,8 @@
+// 6
 import java.util.Scanner;
 
 public class ElseIf {
+	// Demo for else if
 
 	public static void main(String[] args) {
 		

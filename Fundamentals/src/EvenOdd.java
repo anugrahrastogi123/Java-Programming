@@ -1,6 +1,8 @@
+// 5
 import java.util.Scanner;
 
 public class EvenOdd {
+	// Find whether a number is odd or even
 
 	public static void main(String[] args) {
 		

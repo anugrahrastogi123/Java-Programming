@@ -1,5 +1,6 @@
-
+// 3
 public class SimpleInterest {
+	// Calculate the Simple Interest
 
 	public static void main(String[] args) {
 		
