@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TargetSumPairs {
@@ -13,18 +14,37 @@ public class TargetSumPairs {
 			arr[i] = s.nextInt();
 		}
 		
+		Arrays.sort(arr);
+		
 		int target = s.nextInt();
 		
-		int p1 = 0, p2 = 0;
+		// 1. Brute force Approach O(n^2)
+//		for(int i = 0; i < n-1; i++) {
+//			for(int j = i+1; j < n; j++) {
+//				if(arr[i]+arr[j] == target) {
+//					if(arr[i] < arr[j])
+//						System.out.println(arr[i]+" and  "+arr[j]);
+//					else
+//						System.out.println(arr[j]+" and  "+arr[i]);
+//				}
+//			}
+//		}
 		
-		for(int i = 0; i < n-1; i++) {
-			for(int j = i+1; j < n; j++) {
-				if(arr[i]+arr[j] == target) {
-					if(arr[i] < arr[j])
-						System.out.println(arr[i]+" and  "+arr[j]);
-					else
-						System.out.println(arr[j]+" and  "+arr[i]);
-				}
+		// 2. Efficient Approach 
+		int left = 0, right = arr.length - 1;
+		
+		while(left < right) {
+			
+			if(arr[left] + arr[right] == target) {
+				System.out.println(arr[left]+" and "+arr[right]);
+				left++;
+				right--;
+			}
+			else if(arr[left] + arr[right] > target) {
+				right--;
+			}
+			else {
+				left++;
 			}
 		}
 
