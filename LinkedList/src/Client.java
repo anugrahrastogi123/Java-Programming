@@ -18,6 +18,14 @@ public class Client {
 		System.out.println(list.getLast());
 		
 		System.out.println(list.getAt(3));
+		
+		list.reverseData();
+		list.display();
+		
+		list.reversePointers();
+		list.display();
+		
+		System.out.println(list.mid());
 
 	}
 
