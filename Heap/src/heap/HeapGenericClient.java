@@ -25,6 +25,16 @@ public class HeapGenericClient {
 		System.out.println(heapg.remove());
 		System.out.println(heapg.remove());
 		System.out.println(heapg.remove());
+		
+		HeapGeneric<Integer> heap = new HeapGeneric<Integer>();
+		
+		heap.add(20);
+		heap.add(10);
+		heap.add(35);
+		heap.add(16);
+		heap.add(40);
+		
+		heap.display();
 
 	}
 

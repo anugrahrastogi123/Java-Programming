@@ -1,4 +1,4 @@
-package heap;
+package tries;
 
 import java.util.ArrayList;
 

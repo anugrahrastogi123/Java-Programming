@@ -20,7 +20,7 @@ public class Car implements Comparable<Car> {
 	// compare speed of two cars
 	@Override
 	public int compareTo(Car other) {
-		return this.speed - other.speed;
+		return other.speed - this.speed;
 		
 		// to compare colour
 		// return this.colour.compareTo(other.colour);
